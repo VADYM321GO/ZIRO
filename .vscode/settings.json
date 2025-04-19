@@ -1,0 +1,4 @@
+{
+    "editor.semanticHighlighting.enabled": true,
+    "typescript.tsserver.web.projectWideIntellisense.suppressSemanticErrors": false
+}
