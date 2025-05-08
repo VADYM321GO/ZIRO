@@ -1,25 +1,6 @@
 *{padding: 0; margin: 0;}
 a {text-decoration: none;}
 
-$color1:#F5F7FF;
-$color2:#544CAC;
-$color3:#CED5F4;
-$color4:#F9FAFF;
-$color5:#DBE2FF;
-@mixin displayFlex() {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-@mixin space-between() {
-    display: flex;
-    justify-content: space-between;
-}
-@mixin space-around() {
-    display: flex;
-    justify-content: space-around;
-}
-
 .conteiner {
     padding-left: 5%;
     padding-right: 5%;
