@@ -201,9 +201,6 @@ header {
 .start__right-button img {
   width: 38px;
 }
-.start__photo {
-  position: relative;
-}
 .start__photo img {
   width: 500px;
 }
@@ -220,6 +217,7 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 20px;
 }
 .how-it-works__images {
   display: -webkit-box;
@@ -312,7 +310,6 @@ header {
   height: 105px;
 }
 .how-it-works__subtext {
-  max-width: 372px;
   margin-left: 59px;
   color: rgb(168, 168, 168);
   font-family: OpenSans;
@@ -522,7 +519,7 @@ header {
 }
 .featured .featured-content .featured-cards__bag {
   font-family: Open Sans;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 400;
   line-height: 50px;
   letter-spacing: 2%;
@@ -911,9 +908,6 @@ footer .nav-footer .social a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
     height: 750px;
   }
   .start__content {
@@ -921,7 +915,7 @@ footer .nav-footer .social a {
     height: 300px;
   }
   .start__photo img {
-    max-width: 300px;
+    width: 300px;
     margin-top: 57%;
   }
   .start__title {
@@ -933,21 +927,16 @@ footer .nav-footer .social a {
     margin-top: 30px;
     max-width: 480px;
     text-align: center;
-  }
-  .start__buttons {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    height: 200px;
+    margin-bottom: 30px;
   }
   .start__left-button {
     width: 140px;
     height: 35px;
   }
   .start__right-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     margin-left: 49%;
     margin-top: -13%;
   }
@@ -1178,5 +1167,657 @@ footer .nav-footer .social a {
   }
   footer .nav-footer .social {
     width: 200px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  header {
+    max-width: 768px;
+  }
+  nav {
+    max-width: 768px;
+  }
+  .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 400px;
+  }
+  .menu__link {
+    font-size: 3vw;
+  }
+  .start {
+    max-width: 768px;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+    height: 800px;
+    padding: 0;
+  }
+  .start__content {
+    max-width: 400px;
+  }
+  .start__title {
+    max-width: 768px;
+    font-size: 30px;
+    text-align: center;
+    font-size: 5vw;
+  }
+  .start__subtitle {
+    margin-top: 30px;
+    max-width: 768px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .start__buttons {
+    max-width: 768px;
+    height: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 30px;
+  }
+  .start__left-button {
+    width: 140px;
+    height: 35px;
+    margin: 0px;
+  }
+  .start__right-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0px;
+  }
+  .start__photo img {
+    width: 400px;
+  }
+  .how-it-works {
+    height: 1750px;
+  }
+  .how-it-works__images {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 30px;
+    height: 800px;
+  }
+  .how-it-works__images img {
+    width: 130px;
+  }
+  .how-it-works__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .choose {
+    height: 1000px;
+  }
+  .choose__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .featured {
+    height: 2000px;
+  }
+  .featured .featured-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .featured .featured-content .cards {
+    margin-left: 0;
+  }
+  .featured .featured-content .view {
+    position: static;
+    margin-top: 30%;
+  }
+  .featured .featured-content__arrows {
+    margin-top: 50em;
+  }
+  .customer {
+    height: 1000px;
+  }
+  .customer .content-costumer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .customer .content-costumer__photo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .customer .content-costumer__photo .men-photo {
+    width: 400px;
+    margin-bottom: 40px;
+    margin-right: 0;
+  }
+  .customer .content-costumer__groupe-of-circles .group-circle {
+    top: 60%;
+    right: 84%;
+  }
+  .customer .content-costumer .letter {
+    margin-left: 10%;
+  }
+  .customer .content-costumer .about-William__subscribers {
+    margin-top: 30px;
+  }
+  .statistics .big-number {
+    font-size: 5.5vw;
+    text-align: center;
+  }
+  .statistics .name-number {
+    font-size: 2.5vw;
+  }
+  .pricing {
+    height: 1600px;
+  }
+  .pricing .content-pricing {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 50px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer {
+    height: 1600px;
+  }
+  footer .content-footer__columns {
+    padding-top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  footer .content-footer__columns .columns__title {
+    margin-top: 50px;
+    text-align: center;
+  }
+  footer .content-footer .nav-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .content-footer .nav-footer__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 30px;
+    margin: 30px 0px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  .menu {
+    position: relative;
+  }
+  .menu .menulink_search-form {
+    position: absolute;
+    top: 100%;
+  }
+  .start {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 900px;
+  }
+  .start__title {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .start__subtitle {
+    text-align: center;
+  }
+  .start__buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100px;
+  }
+  .start__right-button {
+    margin-top: 0;
+  }
+  .how-it-works__images img {
+    width: 80px;
+  }
+  .how-it-works__number {
+    margin-right: 0;
+  }
+  .how-it-works .instruction-2 {
+    height: 140px;
+  }
+  .choose {
+    height: 531px;
+  }
+  .choose .rectangles {
+    height: 250px;
+  }
+  .featured {
+    height: 950px;
+  }
+  .featured .featured-content__slider {
+    height: 550px;
+  }
+  .featured .featured-content .cards {
+    height: 550px;
+  }
+  .featured .featured-content .featured-content__slider_first {
+    height: 550px;
+  }
+  .featured .featured-cards__like {
+    margin-bottom: 40px;
+  }
+  .featured .featured-cards__bag {
+    font-size: 3px;
+  }
+  .customer {
+    margin-bottom: 40px;
+  }
+  .pricing .content-pricing .offer-card {
+    width: 220px;
+  }
+  .pricing .content-pricing__text {
+    font-size: 12px;
+  }
+  footer .nav-footer__link {
+    -webkit-column-gap: 24px;
+       -moz-column-gap: 24px;
+            column-gap: 24px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .title h2 {
+    font-size: 4vw;
+  }
+  .title h3 {
+    font-size: 1.1vw;
+  }
+  .menu__link {
+    font-size: 1.5vw;
+  }
+  .menu .menulink_login {
+    font-size: 1.5vw;
+  }
+  .start__title {
+    font-size: 3.8vw;
+  }
+  .start__subtitle {
+    font-size: 1.2vw;
+  }
+  .how-it-works__title {
+    font-size: 2vw;
+  }
+  .how-it-works__subtitle {
+    font-size: 3vw;
+  }
+  .how-it-works__instruction {
+    max-width: 550px;
+  }
+  .how-it-works__text {
+    font-size: 1.8vw;
+  }
+  .how-it-works__subtext {
+    font-size: 1.1vw;
+  }
+  .choose {
+    height: 500px;
+  }
+  .choose__content {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    gap: 0;
+  }
+  .choose__content .rectangles {
+    width: 24%;
+  }
+  .choose__text {
+    font-size: 2vw;
+  }
+  .choose__subtext {
+    font-size: 1vw;
+  }
+  .featured .featured-content {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .featured .featured-content .featured-content__slider_first {
+    width: 25%;
+  }
+  .featured .featured-content .cards {
+    width: 25%;
+  }
+  .featured .featured-content .featured-cards__profession {
+    font-size: 1.8vw;
+  }
+  .featured .featured-content .featured-cards__name {
+    font-size: 1.5vw;
+  }
+  .featured .featured-content .featured-cards__bag {
+    font-size: 1.5vw;
+    margin-right: 80px;
+  }
+  .featured .featured-content .featured-cards__bag span {
+    font-size: 1.5vw;
+  }
+  .featured .featured-content .featured-cards__salary {
+    font-size: 1.5vw;
+    margin-right: 80px;
+  }
+  .featured .featured-content .featured-cards__salary span {
+    font-size: 1.5vw;
+  }
+  .featured .featured-content .featured-cards__apply {
+    font-size: 1.4vw;
+  }
+  .featured .featured-content .view__button {
+    font-size: 1.4vw;
+  }
+  .customer {
+    margin-bottom: 20%;
+  }
+  .customer__content .content-costumer {
+    height: 700px;
+  }
+  .customer__content .content-costumer__photo-men .men-photo {
+    width: 500px;
+  }
+  .customer__content .about-William__name {
+    font-size: 2.5vw;
+  }
+  .customer__content .about-William__profession {
+    font-size: 1.3vw;
+  }
+  .customer__content .about-William__text-about-me {
+    font-size: 1.4vw;
+  }
+  .statistics .name-number {
+    font-size: 1.5vw;
+  }
+  .pricing .content-pricing__title {
+    font-size: 2vw;
+  }
+  .pricing .content-pricing__date {
+    font-size: 1.5vw;
+  }
+  .pricing .content-pricing__text {
+    white-space: nowrap;
+    font-size: 1.5vw;
+    padding-left: 10%;
+    line-height: 46px;
+  }
+  .pricing .content-pricing .offer-card {
+    width: 30%;
+    height: 460px;
+  }
+  .pricing .content-pricing__button {
+    width: 187px;
+    height: 54px;
+    font-size: 1.4vw;
+  }
+  footer .columns__title {
+    font-size: 2.5vw;
+  }
+  footer .columns__list li a {
+    font-size: 1.5vw;
+    line-height: 50px;
+  }
+  footer .name-link {
+    font-size: 1.5vw;
+  }
+}
+@media screen and (min-width: 1441px) and (max-width: 1960px) {
+  .title h2 {
+    font-size: 4vw;
+    margin-bottom: 50px;
+  }
+  .title h3 {
+    font-size: 1.1vw;
+    line-height: 30px;
+  }
+  .menu__link {
+    font-size: 1.5vw;
+  }
+  .menu .menulink_login {
+    font-size: 1.5vw;
+  }
+  .start {
+    height: 800px;
+  }
+  .start__title {
+    margin-top: -20%;
+    font-size: 3.8vw;
+    margin-bottom: 5%;
+    line-height: 70px;
+  }
+  .start__subtitle {
+    font-size: 1.2vw;
+    line-height: 35px;
+  }
+  .start__photo img {
+    width: 600px;
+  }
+  .how-it-works {
+    height: 900px;
+  }
+  .how-it-works .instruction-2 {
+    height: 160px;
+  }
+  .how-it-works__title {
+    font-size: 2vw;
+    margin-bottom: 20px;
+  }
+  .how-it-works__subtitle {
+    font-size: 3vw;
+    margin-bottom: 30px;
+  }
+  .how-it-works__instruction {
+    max-width: 550px;
+    margin-bottom: 30px;
+  }
+  .how-it-works__text {
+    font-size: 1.5vw;
+  }
+  .how-it-works__subtext {
+    font-size: 1.1vw;
+  }
+  .how-it-works__images img {
+    width: 150px;
+  }
+  .how-it-works__laptop {
+    width: auto;
+  }
+  .how-it-works__play {
+    top: 65%;
+    left: 65%;
+  }
+  .choose {
+    height: 600px;
+    margin-bottom: 70px;
+  }
+  .choose__text {
+    margin-bottom: 20px;
+  }
+  .choose__subtext {
+    line-height: 30px;
+  }
+  .choose__content {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    gap: 0;
+  }
+  .choose__content .rectangles {
+    width: 24%;
+    height: 250px;
+  }
+  .choose__text {
+    font-size: 2vw;
+  }
+  .choose__subtext {
+    font-size: 1vw;
+  }
+  .featured .featured-content {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .featured .featured-content .featured-content__slider_first {
+    width: 25%;
+  }
+  .featured .featured-content .cards {
+    width: 25%;
+  }
+  .featured .featured-content .featured-cards__profession {
+    font-size: 1.8vw;
+  }
+  .featured .featured-content .featured-cards__name {
+    font-size: 1.5vw;
+  }
+  .featured .featured-content .featured-cards__bag {
+    font-size: 1.5vw;
+    margin-right: 80px;
+  }
+  .featured .featured-content .featured-cards__bag span {
+    font-size: 1.5vw;
+  }
+  .featured .featured-content .featured-cards__salary {
+    font-size: 1.5vw;
+    margin-right: 80px;
+  }
+  .featured .featured-content .featured-cards__salary span {
+    font-size: 1.5vw;
+  }
+  .featured .featured-content .featured-cards__apply {
+    font-size: 1.1vw;
+  }
+  .featured .featured-content .view__button {
+    font-size: 1.1vw;
+  }
+  .customer {
+    margin-bottom: 20%;
+  }
+  .customer__content .content-costumer {
+    height: 700px;
+  }
+  .customer__content .content-costumer__photo-men .men-photo {
+    width: 500px;
+  }
+  .customer__content .about-William__name {
+    font-size: 2.5vw;
+    margin-bottom: 30px;
+  }
+  .customer__content .about-William__profession {
+    font-size: 1.3vw;
+  }
+  .customer__content .about-William__text-about-me {
+    font-size: 1.4vw;
+    line-height: 35px;
+  }
+  .statistics .name-number {
+    font-size: 1.5vw;
+  }
+  .pricing {
+    height: 850px;
+  }
+  .pricing .content-pricing__title {
+    font-size: 2vw;
+  }
+  .pricing .content-pricing__date {
+    font-size: 1.5vw;
+  }
+  .pricing .content-pricing__text {
+    white-space: nowrap;
+    font-size: 1.4vw;
+    padding-left: 10%;
+    line-height: 46px;
+  }
+  .pricing .content-pricing .offer-card {
+    width: 30%;
+    height: 460px;
+  }
+  .pricing .content-pricing__button {
+    width: 187px;
+    height: 54px;
+    font-size: 1.1vw;
+  }
+  footer .columns__title {
+    font-size: 2.5vw;
+  }
+  footer .columns__list li a {
+    font-size: 1.5vw;
+    line-height: 50px;
+  }
+  footer .name-link {
+    font-size: 1.5vw;
   }
 }

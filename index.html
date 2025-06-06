@@ -22,25 +22,29 @@
 </head>
 <body>
 <header class="header container">
-        <nav class="menu">
-            <a class="menu__link menu__link_logo" href="">
-                <img src="/icons/logo.svg" alt="icon logo">
-            </a>
-            <a class="menu__link" href="#">Home</a>
-            <a class="menu__link" href="#">Pricing</a>
-            <a class="menu__link" href="#">Blog</a>
-            <a class="menu__link" href="#">Become a member</a>
-            <a class="menu__link" href="#">About Us</a>
-            <a class="menu__link menu__link_search-form">
-                <form action="">
-                    <input placeholder="Search here...." type="text">
-                    <button>
-                        <img class="menu__img-search" src="/icons/search.svg" alt="magnifying glass icon for search">
-                    </button>
-                </form>
-            </a>
-            <a class="menu__link menu__link_login" href=""><span>Login</span>/sing Up</a>
-        </nav>
+    <nav class="menu">
+        <a class="menulink menulink_logo" href="">
+            <img src="/icons/logo.svg" alt="icon logo">
+        </a>
+        <a class="menu__link" href="#">Home</a>
+        <a class="menu__link" href="#">Pricing</a>
+        <a class="menu__link" href="#">Blog</a>
+        <a class="menu__link" href="#">Become a member</a>
+        <a class="menu__link" href="#">About Us</a>
+
+        <div class="menulink menulink_search-form">
+            <form action="">
+                <input class="menu__input" placeholder="Search here..." type="text">
+                <button type="submit" class="menu__btn">
+                    <img class="menu__img-search" src="/icons/search.svg" alt="search">
+                </button>
+            </form>
+        </div>
+
+        <a class="menulink menulink_login" href="">
+            <span>Login</span>/Sign Up
+        </a>
+    </nav>
     </header><section class="start container">
     <div class="start__content">
         <div class="start__title">
@@ -53,9 +57,11 @@
             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
             quis nostrud exercitation ullamco laboris nisi ut aliquip.
         </div>
-        <button class="start__left-button">Discover Now</button>
-        <button class="start__right-button"> <img src="/icons/play.svg" alt="icons play"> Watch Demo</button>
+        <div class="start__buttons">
+            <button class="start__left-button">Discover Now</button>
+            <button class="start__right-button"> <img src="/icons/play.svg" alt="icons play"> Watch Demo</button>
 
+        </div>
     </div>
     <div class="start__photo">
         <img src="/images/girl.png" alt="photo girl">
@@ -163,7 +169,7 @@
             <img src="/icons/first-heart.svg" alt="heart icon for likes">
         </button>
         <button class="featured-cards__apply featured-cards__apply_pink">
-            Apply Nowa
+            Apply Now
         </button>
     </div>
     <div class="featured-content__slider cards">

@@ -121,6 +121,7 @@ header {
         text-align: left;
         margin-bottom: 42px;
     }
+    
     &__left-button {
         background-color: variables.$color-Rich-Blue;
         border-radius: 6px;
@@ -154,8 +155,8 @@ header {
         }
     }
     &__photo {
-        position: relative;
         img {
+
             width: 500px;
         }
     }
@@ -166,6 +167,7 @@ header {
     @include mixins.space-around;
     &__content {
         display: flex;
+        gap: 20px;
     }
     &__images {
         @include mixins.displayFlex;
@@ -232,7 +234,6 @@ header {
         height: 105px;
     }
     &__subtext {
-        max-width: 372px;
         margin-left: 59px;
         color: rgb(168, 168, 168);
         font-family: OpenSans;
@@ -399,7 +400,7 @@ header {
         }
         &__bag {
             font-family: Open Sans;
-            font-size: 16px;
+            font-size: 15px;
             font-weight: 400;
             line-height: 50px;
             letter-spacing: 2%;
@@ -728,7 +729,6 @@ footer {
     .start {
         max-width: 480px;
         @include mixins.flex-direction;
-        justify-content: start;
         height: 750px;
         &__content {
             max-width: 480px;
@@ -736,7 +736,7 @@ footer {
         }
         &__photo {
             img {
-                max-width: 300px;
+                width: 300px;
                 margin-top: 57%;
             }
         }
@@ -750,20 +750,17 @@ footer {
             margin-top: 30px;
             max-width: 480px;
             text-align: center;
-        }
-        &__buttons {
-            display: flex;
-            align-items: center;
-            height: 200px;
+            margin-bottom: 30px;
         }
         &__left-button {
-                width: 140px;
-                height: 35px;
-            }
-            &__right-button {
-                margin-left: 49%;
+            width: 140px;
+            height: 35px;
+        }
+        &__right-button {
+            display: flex;
+            margin-left: 49%;
             margin-top: -13%;
-            }
+        }
     }
 
     .how-it-works {
@@ -909,5 +906,680 @@ footer {
                 width: 200px;
             } 
         }
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width:768px) {
+    header {
+        max-width: 768px;
+    }
+    nav {
+        max-width: 768px;
+    }
+
+    .menu {
+        @include mixins.flex-direction;
+        height: 400px;
+        &__link {
+            font-size: 3vw;
+        }
+    }
+
+    .start {
+        max-width: 768px;
+        display: grid;
+        align-items: end;
+        height: 800px;
+        padding: 0;
+        
+        &__content {
+            max-width: 400px;
+        }
+        
+        &__title {
+            max-width: 768px;
+            font-size: 30px;
+            text-align: center;
+            font-size: 5vw;
+        }
+        &__subtitle {
+            margin-top: 30px;
+            max-width: 768px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        &__buttons {
+            max-width: 768px;
+            height: 100px;
+            @include mixins.displayFlex;
+            margin-bottom: 30px;
+        }
+        &__left-button {
+            width: 140px;
+            height: 35px;
+            margin: 0px;
+        }
+        &__right-button {
+            display: flex;
+            margin: 0px;
+        }
+        &__photo {
+            img {
+                width: 400px;
+            }
+        }
+    }
+
+    .how-it-works {
+        height: 1750px;
+        &__images {
+            @include mixins.flex-direction;
+            row-gap: 30px;
+            height: 800px;
+            img {
+                width: 130px;
+            }
+        }
+        &__content {
+            @include mixins.flex-direction;
+        }
+        &__subtext {
+        }
+    }
+
+    .choose {
+        height: 1000px;
+        &__content {
+            @include mixins.flex-direction;
+        }
+    }
+
+    .featured {
+        height: 2000px;
+        .featured-content {
+            @include mixins.flex-direction;
+            .cards {
+                margin-left: 0;
+            }
+            .view {
+                position: static;
+                margin-top: 30%;
+            }
+            &__arrows {
+                margin-top: 50em;
+            }
+        }
+    }
+
+    .customer {
+        height: 1000px;
+        .content-costumer {
+            @include mixins.flex-direction;
+            &__photo {
+                display: flex;
+                justify-content: center;
+                .men-photo {
+                width: 400px;
+                margin-bottom: 40px;
+                margin-right: 0;
+                }
+            }
+            &__groupe-of-circles {
+                .group-circle {
+                    top: 60%;
+                    right: 84%;
+                }
+            }
+            .letter {
+                margin-left: 10%;
+            }
+            .about-William__subscribers {
+                margin-top: 30px;
+            }
+        }
+    }
+
+    .statistics {
+        .big-number {
+            font-size: 5.5vw;
+            text-align: center;
+        }
+        .name-number {
+            font-size: 2.5vw;
+        }
+    }
+
+    .pricing {
+        height: 1600px;
+        .content-pricing {
+            @include mixins.flex-direction;
+            row-gap: 50px;
+            align-items: center;
+        }
+    }
+
+    footer {
+        height: 1600px;
+        .content-footer {
+            &__columns {
+                padding-top: 0;
+                @include mixins.flex-direction;
+                align-items: center;
+                text-align: center;
+                .columns__title {
+                    margin-top: 50px;
+                    text-align: center;
+                }
+            }
+            .nav-footer {
+                @include mixins.flex-direction;
+                &__link {
+                    @include mixins.flex-direction;
+                    row-gap: 30px;
+                    margin: 30px 0px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width:1023px) {
+    .menu {
+        position: relative;
+        .menulink_search-form {
+            position: absolute;
+            top: 100%;
+        }
+    }
+
+    .start {
+        @include mixins.flex-direction;
+        justify-content: space-between;
+        height: 900px;
+        &__title {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        &__subtitle {
+            text-align: center;
+        }
+        &__buttons {
+            @include mixins.displayFlex;
+            height: 100px;
+        }
+        &__right-button {
+            margin-top: 0;
+        }
+    }
+    .how-it-works {
+        &__images {
+            img {
+                width: 80px;
+            }
+        }
+        &__number {
+            margin-right: 0;
+        }
+        .instruction-2 {
+            height: 140px;
+        }
+    }
+    .choose {
+        height: 531px;
+        .rectangles {
+            height: 250px;
+        }
+    }
+    .featured {
+        height: 950px;
+        .featured-content{
+            &__slider {
+                height: 550px;
+            }
+            .cards {
+                height: 550px;
+            }
+            .featured-content__slider_first {
+                height: 550px;
+            }
+        }
+        .featured-cards {
+            &__like {
+                margin-bottom: 40px;
+            }
+            &__bag {
+                font-size: 3px;
+            }
+        }
+    }
+    
+    .customer {
+        margin-bottom: 40px;
+    }
+    
+    .pricing {
+        .content-pricing {
+            .offer-card {
+            width: 220px;
+            }
+            &__text {
+                font-size: 12px;
+            }
+        }
+    }
+
+    footer {
+        .nav-footer__link {
+            column-gap: 24px;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width:1440px) {
+    .title {
+        h2 {
+            font-size: 4vw;
+        }
+        h3 {
+            font-size: 1.1vw;
+        }
+    }
+
+    .menu {
+        &__link {
+            font-size: 1.5vw;
+        }
+        .menulink_login {
+            font-size: 1.5vw;
+        }
+    }
+
+    .start {
+        &__title {
+            font-size: 3.8vw;
+        }
+        &__subtitle {
+            font-size: 1.2vw;
+        }
+    }
+
+    .how-it-works {
+        &__title {
+            font-size: 2vw;
+        }
+        &__subtitle {
+            font-size: 3vw;
+        }
+        &__instruction {
+            max-width: 550px;
+        }
+        &__text {
+            font-size: 1.8vw;
+        }
+        &__subtext {
+            font-size: 1.1vw;
+        }
+    }
+
+    .choose {
+        height: 500px;
+        &__content {
+            justify-content: space-evenly;
+            gap: 0;
+            .rectangles {
+                width: 24%;
+            }
+        }
+        &__text {
+            font-size: 2vw;
+        }
+        &__subtext {
+            font-size: 1vw;
+        }
+    }
+
+    .featured {
+        .featured-content {
+            justify-content: space-evenly;
+            .featured-content__slider_first {
+                width: 25%;
+            }
+            .cards {
+                width: 25%;
+            }
+            .featured-cards {
+                &__profession {
+                    font-size: 1.8vw;
+                }
+                &__name {
+                    font-size: 1.5vw;
+                }
+                &__bag {
+                    font-size: 1.5vw;
+                    margin-right: 80px;
+                    span {
+                    font-size: 1.5vw;
+                    }
+                }
+                &__salary {
+                    font-size: 1.5vw;
+                    margin-right: 80px;
+                    span {
+                    font-size: 1.5vw;
+                }
+                }
+                &__apply {
+                    font-size: 1.4vw
+                }
+                
+            }
+            .view__button {
+                font-size: 1.4vw;
+            }
+        }
+    }
+
+    .customer {
+        margin-bottom: 20%;
+        &__content {
+            .content-costumer {
+                height: 700px;
+                &__photo-men {
+                    .men-photo {
+                        width: 500px;
+                    }
+                }
+            }
+            .about-William {
+                    &__name {
+                        font-size: 2.5vw;
+                    }
+                    &__profession {
+                        font-size: 1.3vw;
+                    }
+                    &__text-about-me {
+                    font-size: 1.4vw;
+                }
+            }
+        }
+    }
+
+    .statistics {
+        .name-number {
+            font-size: 1.5vw;
+        }
+    }
+
+    .pricing {
+        .content-pricing {
+            &__title {
+                font-size: 2vw;
+            }
+            &__date {
+                font-size: 1.5vw;
+            }
+            &__text {
+                white-space: nowrap;
+                font-size: 1.5vw;
+                padding-left: 10%;
+                line-height: 46px;
+            }
+            .offer-card {
+            width: 30%;
+            height: 460px;
+        }
+        &__button {
+            width: 187px;
+            height: 54px;
+            font-size: 1.4vw;
+        }
+        }
+        
+    }
+
+    footer {
+            .columns {
+                &__title {
+                    font-size: 2.5vw;
+                }
+                &__list {
+                    li {
+                        a {
+                            font-size: 1.5vw;
+                            line-height: 50px;
+                        }
+                    }
+                }
+            }
+        .name-link {
+            font-size: 1.5vw;
+        }
+        
+    }
+}
+
+@media screen and (min-width: 1441px) and (max-width:1960px) {
+    .title {
+        h2 {
+            font-size: 4vw;
+            margin-bottom: 50px;
+        }
+        h3 {
+            font-size: 1.1vw;
+            line-height: 30px;
+        }
+    }
+
+    .menu {
+        &__link {
+            font-size: 1.5vw;
+        }
+        .menulink_login {
+            font-size: 1.5vw;
+        }
+    }
+
+    .start {
+        height: 800px;
+        &__title {
+            margin-top: -20%;
+            font-size: 3.8vw;
+            margin-bottom: 5%;
+            line-height: 70px;
+        }
+        &__subtitle {
+            font-size: 1.2vw;
+            line-height: 35px;
+        }
+        &__photo {
+            img {
+                width: 600px;
+            }
+        }
+    }
+
+    .how-it-works {
+        height: 900px;
+        .instruction-2 {
+            height: 160px;
+        }
+        &__title {
+            font-size: 2vw;
+            margin-bottom: 20px;
+
+        }
+        &__subtitle {
+            font-size: 3vw;
+            margin-bottom: 30px;
+        }
+        &__instruction {
+            max-width: 550px;
+            margin-bottom: 30px;
+        }
+        &__text {
+            font-size: 1.5vw;
+        }
+        &__subtext {
+            font-size: 1.1vw;
+        }
+        &__images {
+            img {
+                width: 150px;
+            }
+        }
+        &__laptop {
+            width: auto;
+        }
+        &__play {
+            top: 65%;
+            left: 65%;
+        }
+    }
+
+    .choose {
+        height: 600px;
+        margin-bottom: 70px;
+        &__text {
+            margin-bottom: 20px;
+        }
+        &__subtext {
+            line-height: 30px;
+        }
+        &__content {
+            justify-content: space-evenly;
+            gap: 0;
+            .rectangles {
+                width: 24%;
+                height: 250px;
+            }
+        }
+        &__text {
+            font-size: 2vw;
+        }
+        &__subtext {
+            font-size: 1vw;
+        }
+    }
+
+    .featured {
+        .featured-content {
+            justify-content: space-evenly;
+            .featured-content__slider_first {
+                width: 25%;
+            }
+            .cards {
+                width: 25%;
+            }
+            .featured-cards {
+                &__profession {
+                    font-size: 1.8vw;
+                }
+                &__name {
+                    font-size: 1.5vw;
+                }
+                &__bag {
+                    font-size: 1.5vw;
+                    margin-right: 80px;
+                    span {
+                    font-size: 1.5vw;
+                    }
+                }
+                &__salary {
+                    font-size: 1.5vw;
+                    margin-right: 80px;
+                    span {
+                    font-size: 1.5vw;
+                }
+                }
+                &__apply {
+                    font-size: 1.1vw
+                }
+                
+            }
+            .view__button {
+                font-size: 1.1vw;
+            }
+        }
+    }
+
+    .customer {
+        margin-bottom: 20%;
+        &__content {
+            .content-costumer {
+                height: 700px;
+                &__photo-men {
+                    .men-photo {
+                        width: 500px;
+                    }
+                }
+            }
+            .about-William {
+                    &__name {
+                        font-size: 2.5vw;
+                        margin-bottom: 30px;
+                    }
+                    &__profession {
+                        font-size: 1.3vw;
+                    }
+                    &__text-about-me {
+                    font-size: 1.4vw;
+                    line-height: 35px;
+                }
+            }
+        }
+    }
+
+    .statistics {
+        .name-number {
+            font-size: 1.5vw;
+        }
+    }
+
+    .pricing {
+        height: 850px;
+        .content-pricing {
+            &__title {
+                font-size: 2vw;
+            }
+            &__date {
+                font-size: 1.5vw;
+            }
+            &__text {
+                white-space: nowrap;
+                font-size: 1.4vw;
+                padding-left: 10%;
+                line-height: 46px;
+            }
+            .offer-card {
+            width: 30%;
+            height: 460px;
+        }
+        &__button {
+            width: 187px;
+            height: 54px;
+            font-size: 1.1vw;
+        }
+        }
+        
+    }
+
+    footer {
+            .columns {
+                &__title {
+                    font-size: 2.5vw;
+                }
+                &__list {
+                    li {
+                        a {
+                            font-size: 1.5vw;
+                            line-height: 50px;
+                        }
+                    }
+                }
+            }
+        .name-link {
+            font-size: 1.5vw;
+        }
+        
     }
 }
